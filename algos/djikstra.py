@@ -2,6 +2,7 @@ import random
 import timeit
 from dstructs import graphs
 
+
 def djikstra(graph, start, end):
 
     current_node = start
@@ -64,7 +65,7 @@ if __name__ == '__main__':
     ]
 
     graph = graphs.Undirected(edges)
-
     shortest = djikstra(graph, 'X', 'Y')
+
     print(f'shortest path: {shortest}')
     print(timeit.timeit(lambda: djikstra(graph, 'X', 'Y'), number=10000))

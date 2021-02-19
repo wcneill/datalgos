@@ -29,6 +29,9 @@ class Undirected:
     def __getitem__(self, key):
         return self.graph[key]
 
+    def __setitem__(self, key, value):
+        self.graph[key] = value
+
 
 
 
